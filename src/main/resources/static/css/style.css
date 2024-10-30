@@ -1,3 +1,32 @@
-a {
-    font-size: 25px;
+.read-more-link {
+    color: #2e8b57; /* Vert marine */
+    text-decoration: underline;
+}
+
+.read-more-link:hover {
+    color: #1c5c3e; /* Couleur vert marine légèrement plus foncée pour l'effet hover */
+    text-decoration: none; /* Supprime le soulignement lors du survol */
+}
+
+.carousel-img {
+    max-height: 700px; /* Ajustez cette valeur pour la hauteur souhaitée */
+    object-fit: cover; /* Permet de recadrer l'image pour la rendre plus esthétique */
+}
+
+/* Style pour le fond d'image */
+.img-background img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style pour le contenu superposé */
+.img-content {
+    max-width: 90%; /* Contrôle la largeur pour les petits écrans */
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .img-content {
+        max-width: 600px; /* Ajuste la largeur pour les tablettes et plus */
+    }
 }
