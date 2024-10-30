@@ -23,10 +23,10 @@ public class Food {
     @Column(name = "titleblog")
     private String titleBlog;
 
-    @Column(name = "descblogpart1")
+    @Column(name = "descblogpart1", columnDefinition = "text")
     private String descBlogPart1;
 
-    @Column(name = "descblogpart2")
+    @Column(name = "descblogpart2", columnDefinition = "text")
     private String descBlogPart2;
 
     @Column(name = "descblogpart3")
