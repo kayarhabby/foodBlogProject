@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Molley Bélanger Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" th:href="@{../../css/bootstrap.min.css}">
+  <link rel="stylesheet" th:href="@{../../css/style.css}">
+  <!-- Inclure Bootstrap JavaScript -->
+  <script th:src="@{../../js/bootstrap.min.js}" ></script>
 </head>
 <body>
+  <header th:replace="common/header"></header>
 
+  <main>
+    <div class="container-fluid ">
+      <img src="/img/footerImg.jpg" alt="image bloggeuse" class="d-block w-100 img-fluid carousel-img">
+    </div>
+
+    <div class="container-fluid">
+      <h1 class="text-center">CONTACT ME</h1>
+    </div>
+
+    <div class="container-fluid">
+      <h2 class="text-center text-black">Have a question?</h2>
+      <p class="text-center text-body-tertiary"> Shoot me a message below and I’ll be sure to get back to you as soon as I can. Thanks!</p>
+    </div>
+
+    <div class="container my-3">
+      <form action="" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name : </label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name*" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email : </label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email*"  required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message : </label>
+          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message*" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+
+  </main>
+
+  <footer th:replace="common/footer"></footer>
 </body>
 </html>
