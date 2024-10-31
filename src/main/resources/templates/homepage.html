@@ -12,67 +12,7 @@
 </head>
 <body>
 
-<header class="container-fluid py-3 bg-light">
-    <nav class="container-fluid navbar navbar-expand-md navbar-light">
-        <!-- Liens de réseaux sociaux -->
-        <div class="w-100 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="/icons/facebook.png" alt="facebook icon image" style="width: 20px">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="/icons/instagram.png" alt="instagram icon image" style="width: 20px">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="/icons/youtube.png" alt="youtube icon image" style="width: 20px">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="/icons/whatsapp.png" alt="whatsapp icon image" style="width: 20px">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Bouton hamburger pour les petits écrans -->
-        <!-- Bouton hamburger centré pour les petits écrans -->
-        <div class="d-md-none w-100 d-flex justify-content-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <!-- Liens de navigation principaux, avec collapse en petit écran -->
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">CATEGORIES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">CONTACTS</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Texte d'entête centralisé -->
-    <div class="text-center mt-3">
-        <h1 class="display-4">Molley Bélanger</h1>
-        <h2 class="h5 text-muted">PERSONAL BLOG FOOD</h2>
-    </div>
-</header>
+<header th:replace="common/header"></header>
 
 <main>
     <!-- heroes section -->
@@ -149,9 +89,7 @@
 
 </main>
 
-<footer class="text-center">
-    © 2019 Molley Bélanger. <span class="text-success">All Rights Reserved</span>
-</footer>
+<footer th:replace="common/footer"></footer>
 
 </body>
 </html>
