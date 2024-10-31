@@ -20,7 +20,25 @@ public class FoodController {
     // Cette méthode est mappée à la racine ("/")
     @GetMapping("/")
     public String homepage() {
-        return "homepage";
+        return "index";
+    }
+
+    // cette méthode est mappé à la page about
+    @GetMapping("/home/page/about")
+    public String aboutPage() {
+        return "about";
+    }
+
+    // cette méthode est mappé à la page about
+    @GetMapping("/home/page/contact")
+    public String contactPage() {
+        return "contact";
+    }
+
+    // cette méthode est mappé à la page about
+    @GetMapping("/home/page/blog")
+    public String blogPage() {
+        return "blog";
     }
 
     @PostMapping("api/foods")
