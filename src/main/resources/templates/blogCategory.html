@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Molley Bélanger Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" th:href="@{../../css/bootstrap.min.css}">
+  <link rel="stylesheet" th:href="@{../../css/style.css}">
+  <!-- Inclure Bootstrap JavaScript -->
+  <script th:src="@{../../js/bootstrap.min.js}"></script>
+
+  <script th:src="@{../../js/fetchFoodsFromDatabaseToBlogCategoryPage.js}"></script>
+
 </head>
 <body>
+  <header th:replace="common/header"></header>
+
+  <main>
+    <div class="container-fluid">
+     <h2 class = "text-center display-3">Blog Category</h2>
+    </div>
+
+    <div id="foodCategoryContainer" class="container">
+      <!-- Insertion des catégories de recettes via javascript -->
+    </div>
+  </main>
+
+  <footer th:replace="common/footer"></footer>
 
 </body>
 </html>
