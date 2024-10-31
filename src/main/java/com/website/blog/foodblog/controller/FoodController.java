@@ -36,9 +36,9 @@ public class FoodController {
     }
 
     // cette méthode est mappé à la page about
-    @GetMapping("/home/page/blog")
+    @GetMapping("/home/page/blogCategory")
     public String blogPage() {
-        return "blog";
+        return "blogCategory";
     }
 
     @PostMapping("api/foods")
