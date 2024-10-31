@@ -25,6 +25,12 @@
     padding: 1rem;
 }
 
+/* Style pour la taille des cards */
+
+.card-img-size {
+    height: 315px;
+}
+
 @media (min-width: 768px) {
     .img-content {
         max-width: 600px; /* Ajuste la largeur pour les tablettes et plus */
